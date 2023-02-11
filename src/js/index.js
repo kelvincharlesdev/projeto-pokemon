@@ -122,7 +122,7 @@ axios.get("https://pokeapi.co/api/v2/pokemon?limit=27&offset=0").then((data) => 
 }
 
 function buscar() {
-  axios.get("https://pokeapi.co/api/v2/pokemon/" + document.getElementById("pokemon").value).then((data) => {
+  axios.get("https://pokeapi.co/api/v2/pokemon/" + document.getElementById("pokemon").value.toLowerCase()).then((data) => {
     document.getElementById("error").style.display = "none"
       corpo.innerHTML = ` 
         <div class="card unico">
