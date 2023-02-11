@@ -1,0 +1,73 @@
+@media (max-width: 795px) {
+  main .container {
+    margin: 3rem;
+  }
+
+  main .container .card.unico {
+    display: flex;
+    flex-direction: column;
+    background-color: #efeff2;
+    box-shadow: -0.5rem -0.5rem 1rem #663399, 0.5rem 0.5rem 1rem #e2e2e5;
+    width: 400px;
+    border-radius: 2rem;
+    padding: 3rem;
+  }
+
+  main .container .card.unico .info .img {
+    width: 350px;
+    height: 350px;
+  }
+
+  main .container .card.unico .info .img img {
+    width: 50%;
+  }
+
+  main .container .card.unico .stats h2 {
+    font-size: 4rem;
+  }
+
+  main .container .card.unico .stats p {
+    font-size: 2rem;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  main .cabecalho .busca {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  main .cabecalho .busca .btn {
+    display: flex;
+    gap: 2rem;
+  }
+
+  main .container .card.unico {
+    width: 300px;
+  }
+
+  main .container .card.unico .info .img {
+    width: 200px;
+    height: 200px;
+  }
+
+  main .container .card.unico .info .img img {
+    width: 60%;
+  }
+
+  main .container .card.unico .stats h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 390px) {
+  main .container .card.unico {
+    width: 250px;
+  }
+}

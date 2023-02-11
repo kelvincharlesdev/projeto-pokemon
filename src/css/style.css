@@ -1,0 +1,256 @@
+@font-face {
+  font-family: "Pokemon";
+  src: url(../fonts/Pokemon\ Classic.ttf);
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Pokemon";
+}
+
+body {
+  background: url(../images/fundo.jpg) no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+main .cabecalho {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .cabecalho .logo {
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+main .cabecalho .logo img {
+  display: flex;
+  max-width: 100%;
+}
+
+main .cabecalho .busca {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+main .cabecalho .busca .input{
+display: flex;
+flex-direction: column;
+text-align: center;
+color: #F92E4E;
+}
+
+main .cabecalho .busca input {
+  height: 4rem;
+  width: 30rem;
+  border-radius: 50px;
+  padding-left: 2rem;
+}
+
+main .cabecalho .busca label button {
+  width: 5rem;
+  height: auto;
+  border-radius: 50px;
+  background-color: transparent;
+  box-shadow: -0.5rem -0.5rem 1rem #663399, 0.5rem 0.5rem 1rem #e2e2e5;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+main .cabecalho .busca label button img {
+  max-width: 100%;
+}
+
+main .cabecalho .busca label button:hover {
+  transform: translateY(-10px);
+}
+
+main .cabecalho .btn-voltar {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50px;
+  background-color: transparent;
+  box-shadow: -0.5rem -0.5rem 1rem #663399, 0.5rem 0.5rem 1rem #e2e2e5;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+main .btn-voltar img {
+  width: 100%;
+  transform: rotate(270deg);
+}
+
+main .cabecalho .btn-voltar:hover {
+  transform: translateY(-10px);
+}
+
+main .container {
+  margin: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  overflow-y: auto;
+  max-height: 700px;
+  padding-right: 1.2rem;
+}
+
+main .container .card {
+  background-color: #efeff2;
+  box-shadow: -0.5rem -0.5rem 1rem #663399, 0.5rem 0.5rem 1rem #e2e2e5;
+  width: 220px;
+  border-radius: 2rem;
+  padding: 3rem;
+}
+
+main .container .card .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+main .container .card .info .img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  box-shadow: -1rem -1rem 1rem #f9f9fc, 1rem 1rem 1rem #dadae0;
+}
+
+main .container .card .info img {
+  width: 80%;
+}
+
+main .container .card .info h2 {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+main .container .card .info p {
+  font-size: 1rem;
+  color: #787879;
+  margin-top: 0.5rem;
+}
+
+main .container .card .stats {
+  margin-top: 2.5rem;
+}
+
+main .container .card .stats ul li {
+  padding-top: 0.4rem;
+}
+
+main .container .card .stats ul li .stats-name {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 4rem;
+}
+
+main .container .card .stats ul li .stats-name p {
+  max-width: 1rem;
+  font-size: 0.6rem;
+  font-weight: bold;
+}
+
+main .container .card .stats ul li .stats-name .barra-cheia {
+  width: 100%;
+  height: 0.8rem;
+  border: 1.5px solid white;
+  background-color: transparent;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+main .container .card .stats ul li .stats-name .barra-cheia .barra-porcentagem {
+  display: flex;
+  flex-direction: column;
+  height: 0.4rem;
+  border-radius: 50px;
+}
+
+main .container.unico {
+  overflow-y: auto;
+}
+
+main .container .card.unico {
+  width: 60rem;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  box-shadow: -0.5rem 0.5rem 1rem #e2e2e5, 0.5rem 0.5rem 1rem #e2e2e5;
+}
+
+main .container .card.unico .info .img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  box-shadow: -1rem -1rem 1rem #f9f9fc, 1rem 1rem 1rem #dadae0;
+}
+
+main .container .card.unico .info .img img {
+  width: 70%;
+}
+
+main .container .card.unico .stats {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2rem;
+  text-align: center;
+}
+
+main .container .card.unico .stats h2 {
+  font-size: 2rem;
+}
+
+main .container .card.unico .stats p {
+  font-size: 1rem;
+}
+
+main .container .card.unico .stats ul li .stats-name {
+  display: flex;
+  gap: 7rem;
+  width: 100%;
+}
+
+main .container .card.unico .stats ul li .stats-name p {
+  font-size: 1rem;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+  font-size: 0.8rem;
+  gap: 1rem;
+}
+
+footer a {
+  color: #efeff2;
+  transition: 0.3s ease-in-out;
+}
+
+footer a:hover {
+  transform: translateY(-5px);
+}

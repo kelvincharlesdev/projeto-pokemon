@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/rolagem.css" />
+    <link rel="stylesheet" href="src/css/responsive.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <section class="cabecalho">
+
+        <div class="logo">
+          <img src="src/images/logo-pokemon.png" alt="Logo Pokemon" />
+        </div>
+
+        <div class="busca">
+            <div class="input">
+                <input
+                    type="text"
+                    name="nome-pokemon"
+                    id="pokemon"
+                    placeholder="Busque seu pokemon favorito!"/>
+            
+                <div class="error" id="error" style="display: none;">
+                    <P>*Pokémon inválido*</P>
+                </div>
+            </div>
+
+          
+
+          <div class="btn">
+
+            <label for="pokemon">
+                <button onclick="buscar()">
+                <img src="src/images/pokebola.png" alt="pokebola" /></button>
+            </label>
+
+            <button class="btn-voltar"  onclick="voltar()">
+              <img src="src/images/seta.jpg" alt="" />
+            </button>
+
+          </div>
+        </div>
+      </section>
+
+      <section>
+        
+        <div class="container unico" id="container">
+
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      Challenge by:<a href="#"> Desbravando a Programação</a>. Coded by:<a
+        href="https://github.com/kelvincharlesdev"
+        target="_blank"
+      >
+        Kelvin Charles da Cruz</a
+      >& <a href="https://github.com/JeanLeao" target="_blank">Jean Leão</a>.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="src/js/index.js"></script>
+  </body>
+</html>
